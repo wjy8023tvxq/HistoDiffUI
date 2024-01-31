@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>API Query Results</title>
+</head>
+<body>
+    <h1>API Query Results of {{ key }} = {{ value }}</h1>
+    {%  for document in data %}
+        <p>{{ document }}</p>
+    {% endfor %}
+
+</body>
+</html>

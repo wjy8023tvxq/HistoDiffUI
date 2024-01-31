@@ -1,0 +1,567 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b12f5aaf-5e84-4cc9-aa44-85481e184757" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/HistoDiffUI.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/histo_diff_ui/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/histo_diff_ui/db_utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/histo_diff_ui/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/LogoCustom/58670430.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/addDown.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/addOver.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/addUp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/alignCenterDown.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/alignCenterOver.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/alignCenterUp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/alignJustifyDown.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/alignJustifyOver.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/alignJustifyUp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/alignLeftDown.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/alignLeftOver.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/alignLeftUp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/alignRightDown.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/alignRightOver.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/alignRightUp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/audioMutedDown.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/audioMutedOver.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/audioMutedUp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/audioOnDown.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/audioOnOver.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/audioOnUp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/cancelDown.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/cancelOver.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/cancelUp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/clearAllDown.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/clearAllOver.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/clearAllUp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/clearDown.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/clearOver.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/clearUp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/color0Down.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/color0Over.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/color0Up.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/color1Down.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/color1Over.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/color1Up.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/color2Down.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/color2Over.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/color2Up.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/color3Down.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/color3Over.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/color3Up.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/color4Down.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/color4Over.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/color4Up.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/color5Down.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/color5Over.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/color5Up.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/color6Down.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/color6Over.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/color6Up.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/color7Down.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/color7Over.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/color7Up.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/colorPickerDown.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/colorPickerOver.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/colorPickerUp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/deleteDown.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/deleteOver.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/deleteUp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/editDown.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/editModeDivider.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/editModeFieldOfViewDown.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/editModeFieldOfViewOver.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/editModeFieldOfViewUp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/editModeFreehandDown.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/editModeFreehandOver.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/editModeFreehandUp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/editModePolygonDown.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/editModePolygonOver.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/editModePolygonUp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/editModeShapeDown.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/editModeShapeOver.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/editModeShapeUp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/editModeTextDown.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/editModeTextOver.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/editModeTextUp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/editOver.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/editUp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/ellipsesDown.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/ellipsesOver.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/ellipsesUp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/fullViewDivider.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/fullViewDown.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/fullViewExitDown.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/fullViewExitOver.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/fullViewExitUp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/fullViewOver.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/fullViewUp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/helpDown.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/helpOver.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/helpUp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/imageFilterApplyDown.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/imageFilterApplyOver.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/imageFilterApplyUp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/imageFilterClearDown.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/imageFilterClearOver.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/imageFilterClearUp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/imageFilterDivider.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/imageFilterMinusDown.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/imageFilterMinusOver.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/imageFilterMinusUp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/imageFilterPlusDown.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/imageFilterPlusOver.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/imageFilterPlusUp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/imageFiltersClearAllDown.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/imageFiltersClearAllOver.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/imageFiltersClearAllUp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/linePickerDown.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/linePickerOver.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/linePickerUp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/logoDivider.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/measureDown.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/measureExitDown.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/measureExitOver.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/measureExitUp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/measureOver.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/measureUp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/narrativeBoldDown.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/narrativeBoldOver.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/narrativeBoldUp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/narrativeItalicDown.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/narrativeItalicOver.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/narrativeItalicUp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/narrativeScaleDownDown.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/narrativeScaleDownOver.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/narrativeScaleDownUp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/narrativeScaleUpDown.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/narrativeScaleUpOver.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/narrativeScaleUpUp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/narrativeSetInitialDown.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/narrativeSetInitialOver.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/narrativeSetInitialUp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/narrativeUnderlineDown.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/narrativeUnderlineOver.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/narrativeUnderlineUp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/nextDown.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/nextOver.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/nextUp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/panDivider.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/panDownDown.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/panDownOver.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/panDownUp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/panLeftDown.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/panLeftOver.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/panLeftUp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/panRightDown.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/panRightOver.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/panRightUp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/panUpDown.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/panUpOver.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/panUpUp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/panelHideDown.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/panelHideOver.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/panelHideUp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/panelShowDown.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/panelShowOver.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/panelShowUp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/previewDown.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/previewOver.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/previewUp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/priorDown.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/priorOver.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/priorUp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/resetDown.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/resetOver.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/resetUp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/rotateClockwiseDown.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/rotateClockwiseOver.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/rotateClockwiseUp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/rotateCounterwiseDown.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/rotateCounterwiseOver.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/rotateCounterwiseUp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/rotateDivider.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/saveDown.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/saveOver.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/saveUp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/sliderThumbDown.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/sliderThumbOver.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/sliderThumbUp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/sliderTick-unhidden-notUsed.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/sliderTick.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/sliderTrack.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/startDown.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/startUp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/stopDown.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/stopOver.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/stopUp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/tab.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/tabButtonArea.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/toolbarBackground.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/toolbarExpandDown.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/toolbarExpandOver.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/toolbarExpandUp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/toolbarLogo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/toolbarMinimizeDown.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/toolbarMinimizeOver.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/toolbarMinimizeUp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/tourOrSlideDivider.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/trackingClearAllDown.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/trackingClearAllOver.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/trackingClearAllUp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/trackingClearLastDown.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/trackingClearLastOver.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/trackingClearLastUp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/trackingClearTypeDown.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/trackingClearTypeOver.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/trackingClearTypeUp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/trackingNavDown.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/trackingNavOver.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/trackingNavUp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/trackingSaveDown.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/trackingSaveOver.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/trackingSaveUp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/viewModeDown.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/viewModeOver.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/viewModeUp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/zoomInDown.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/zoomInOver.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/zoomInUp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/zoomOutDown.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/zoomOutOver.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/zoomOutUp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/skinFiles.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/SlideAssets/Comparison/P1Kidney.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-HE-DUPE/ImageProperties.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-HE-DUPE/TileGroup0/0-0-0.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-HE-DUPE/TileGroup0/1-0-0.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-HE-DUPE/TileGroup0/1-1-0.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-HE-DUPE/TileGroup0/2-0-0.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-HE-DUPE/TileGroup0/2-0-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-HE-DUPE/TileGroup0/2-1-0.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-HE-DUPE/TileGroup0/2-1-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-HE-DUPE/TileGroup0/2-2-0.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-HE-DUPE/TileGroup0/2-2-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-HE-DUPE/TileGroup0/3-0-0.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-HE-DUPE/TileGroup0/3-0-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-HE-DUPE/TileGroup0/3-0-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-HE-DUPE/TileGroup0/3-0-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-HE-DUPE/TileGroup0/3-1-0.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-HE-DUPE/TileGroup0/3-1-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-HE-DUPE/TileGroup0/3-1-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-HE-DUPE/TileGroup0/3-1-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-HE-DUPE/TileGroup0/3-2-0.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-HE-DUPE/TileGroup0/3-2-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-HE-DUPE/TileGroup0/3-2-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-HE-DUPE/TileGroup0/3-2-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-HE-DUPE/TileGroup0/3-3-0.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-HE-DUPE/TileGroup0/3-3-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-HE-DUPE/TileGroup0/3-3-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-HE-DUPE/TileGroup0/3-3-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-HE-DUPE/TileGroup0/3-4-0.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-HE-DUPE/TileGroup0/3-4-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-HE-DUPE/TileGroup0/3-4-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-HE-DUPE/TileGroup0/3-4-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-HE/ImageProperties.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-HE/TileGroup0/0-0-0.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-HE/TileGroup0/1-0-0.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-HE/TileGroup0/1-1-0.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-HE/TileGroup0/2-0-0.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-HE/TileGroup0/2-0-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-HE/TileGroup0/2-1-0.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-HE/TileGroup0/2-1-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-HE/TileGroup0/2-2-0.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-HE/TileGroup0/2-2-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-HE/TileGroup0/3-0-0.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-HE/TileGroup0/3-0-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-HE/TileGroup0/3-0-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-HE/TileGroup0/3-0-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-HE/TileGroup0/3-1-0.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-HE/TileGroup0/3-1-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-HE/TileGroup0/3-1-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-HE/TileGroup0/3-1-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-HE/TileGroup0/3-2-0.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-HE/TileGroup0/3-2-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-HE/TileGroup0/3-2-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-HE/TileGroup0/3-2-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-HE/TileGroup0/3-3-0.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-HE/TileGroup0/3-3-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-HE/TileGroup0/3-3-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-HE/TileGroup0/3-3-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-HE/TileGroup0/3-4-0.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-HE/TileGroup0/3-4-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-HE/TileGroup0/3-4-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-HE/TileGroup0/3-4-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-SBST/ImageProperties.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-SBST/TileGroup0/0-0-0.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-SBST/TileGroup0/1-0-0.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-SBST/TileGroup0/1-1-0.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-SBST/TileGroup0/2-0-0.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-SBST/TileGroup0/2-0-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-SBST/TileGroup0/2-1-0.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-SBST/TileGroup0/2-1-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-SBST/TileGroup0/2-2-0.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-SBST/TileGroup0/2-2-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-SBST/TileGroup0/3-0-0.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-SBST/TileGroup0/3-0-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-SBST/TileGroup0/3-0-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-SBST/TileGroup0/3-0-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-SBST/TileGroup0/3-1-0.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-SBST/TileGroup0/3-1-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-SBST/TileGroup0/3-1-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-SBST/TileGroup0/3-1-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-SBST/TileGroup0/3-2-0.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-SBST/TileGroup0/3-2-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-SBST/TileGroup0/3-2-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-SBST/TileGroup0/3-2-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-SBST/TileGroup0/3-3-0.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-SBST/TileGroup0/3-3-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-SBST/TileGroup0/3-3-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-SBST/TileGroup0/3-3-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-SBST/TileGroup0/3-4-0.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-SBST/TileGroup0/3-4-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-SBST/TileGroup0/3-4-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-SBST/TileGroup0/3-4-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/ZoomifyImageViewerEnterprise-3viewer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/36-ComparisonORG.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/API_error.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/API_query_form.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/API_result.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/Homepage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/filter_result.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/form.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Flask Main" />
+        <option value="HTML File" />
+        <option value="Python Script" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="FlaskConsoleOptions" custom-start-script="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))">
+    <envs>
+      <env key="FLASK_APP" value="app" />
+    </envs>
+    <option name="myCustomStartScript" value="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))" />
+    <option name="myEnvs">
+      <map>
+        <entry key="FLASK_APP" value="app" />
+      </map>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/javascript/extLibs/http_static.centro.org.uk_js_zoomify_ZoomifyImageViewerPro-min.js" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="2a3fNHkaRRcT6F0VMSeIOJ9ck5A" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;Flask server.Flask (app.py).executor&quot;: &quot;Run&quot;,
+    &quot;Flask server.HistoDiffUI.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.HomePageTest.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.ImageViewerTest.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.ProjectTest.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.Test.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.Unnamed.executor&quot;: &quot;Run&quot;,
+    &quot;Python.get_html.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/jiayiwu/Documents/Workspace/HistoDiffUI/templates&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/templates" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/static" />
+      <recent name="$PROJECT_DIR$/templates" />
+      <recent name="$PROJECT_DIR$/static/SlideAssets/Comparison" />
+      <recent name="$PROJECT_DIR$/static/SlideAssets" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Flask server.Flask (app.py)">
+    <configuration name="HomePageTest" type="JavascriptDebugType" uri="file://$PROJECT_DIR$/templates/CLAM_web.html" useFirstLineBreakpoints="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="ImageViewerTest" type="JavascriptDebugType" uri="http://localhost:63342/HistoDiffUI/templates/36-ComparisonORG.htm" useBuiltInWebServerPort="true">
+      <mapping url="http://localhost:63342/HistoDiffUI/templates" local-file="$PROJECT_DIR$/Assets" />
+      <mapping url="http://localhost:63342/HistoDiffUI/templates" local-file="$PROJECT_DIR$/WSI_CLAM" />
+      <mapping url="http://localhost:63342/HistoDiffUI/templates" local-file="$PROJECT_DIR$/SlideAssets" />
+      <mapping url="http://localhost:63342/HistoDiffUI/templates" local-file="$PROJECT_DIR$/templates" />
+      <method v="2" />
+    </configuration>
+    <configuration name="ProjectTest" type="JavascriptDebugType" uri="http://localhost:63342/HistoDiffUI/templates/CLAM_web.html" useBuiltInWebServerPort="true">
+      <mapping url="http://localhost:63342/HistoDiffUI/templates" local-file="$PROJECT_DIR$/Assets" />
+      <mapping url="http://localhost:63342/HistoDiffUI/templates" local-file="$PROJECT_DIR$/WSI_CLAM" />
+      <mapping url="http://localhost:63342/HistoDiffUI/templates" local-file="$PROJECT_DIR$/SlideAssets" />
+      <mapping url="http://localhost:63342/HistoDiffUI/templates" local-file="$PROJECT_DIR$/templates" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Flask (app.py)" type="Python.FlaskServer" temporary="true" nameIsGenerated="true">
+      <module name="HistoDiffUI" />
+      <option name="target" value="$PROJECT_DIR$/app.py" />
+      <option name="targetType" value="PATH" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration name="HistoDiffUI" type="Python.FlaskServer">
+      <module name="HistoDiffUI" />
+      <option name="target" value="$PROJECT_DIR$/app.py" />
+      <option name="targetType" value="PATH" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Flask server.HistoDiffUI" />
+      <item itemvalue="Flask server.Flask (app.py)" />
+      <item itemvalue="JavaScript Debug.ProjectTest" />
+      <item itemvalue="JavaScript Debug.ImageViewerTest" />
+      <item itemvalue="JavaScript Debug.HomePageTest" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Flask server.Flask (app.py)" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-50da183f06c8-2887949eec09-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-233.13135.95" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b12f5aaf-5e84-4cc9-aa44-85481e184757" name="Changes" comment="" />
+      <created>1703552142412</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1703552142412</updated>
+      <workItem from="1703552149583" duration="16121000" />
+      <workItem from="1703790223933" duration="130000" />
+      <workItem from="1703795363338" duration="605000" />
+      <workItem from="1704414638994" duration="1138000" />
+      <workItem from="1705429177988" duration="42170000" />
+      <workItem from="1705561275217" duration="26052000" />
+      <workItem from="1705632877479" duration="46629000" />
+      <workItem from="1706288721405" duration="20391000" />
+      <workItem from="1706326890218" duration="37723000" />
+      <workItem from="1706413861852" duration="2903000" />
+      <workItem from="1706417306916" duration="17000" />
+      <workItem from="1706425751098" duration="218000" />
+      <workItem from="1706431805301" duration="1063000" />
+      <workItem from="1706435785555" duration="639000" />
+      <workItem from="1706484689511" duration="635000" />
+      <workItem from="1706487472309" duration="5038000" />
+      <workItem from="1706500012738" duration="833000" />
+      <workItem from="1706501497798" duration="3288000" />
+      <workItem from="1706508975948" duration="5958000" />
+      <workItem from="1706551914351" duration="1974000" />
+      <workItem from="1706557058319" duration="1378000" />
+      <workItem from="1706570018682" duration="1800000" />
+      <workItem from="1706577577977" duration="914000" />
+      <workItem from="1706669692802" duration="1998000" />
+      <workItem from="1706721214469" duration="424000" />
+      <workItem from="1706722173065" duration="885000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>http://localhost:63342/HistoDiffUI/static/ZoomifyImageViewerPro-min.js</url>
+          <line>844</line>
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>http://localhost:63342/HistoDiffUI/static/ZoomifyImageViewerPro-min.js</url>
+          <line>218</line>
+          <option name="timeStamp" value="39" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/HistoDiffUI$get_html.coverage" NAME="get_html Coverage Results" MODIFIED="1705615686453" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/templates" />
+    <SUITE FILE_PATH="coverage/HistoDiffUI$HistoDiffUI.coverage" NAME="HistoDiffUI Coverage Results" MODIFIED="1705632417675" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/HistoDiffUI$Flask__app_py_.coverage" NAME="Flask (app.py) Coverage Results" MODIFIED="1706721246708" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+</project>

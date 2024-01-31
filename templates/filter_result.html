@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>API Filtered Query Results</title>
+</head>
+<body>
+    <h1>{{ field }} of {{ filter_key }} = {{ filter_value }}</h1>
+    {%  for document in data %}
+        <p>{{ document }}</p>
+    {% endfor %}
+</body>
+</html>

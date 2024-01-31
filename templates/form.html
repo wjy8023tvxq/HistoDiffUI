@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HistoAug Feedback Form</title>
+</head>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Feedback Form</title>
+</head>
+<body>
+
+    <h1>HistoAug Feedback Form</h1>
+
+    <form action="/submit" method="post">
+        <label for="comment">Comment:</label><br>
+        <input type="text" id="comment" name="comment"><br>
+
+        <label for="score">Score:</label><br>
+        <input type="text" id="score" name="score"><br>
+
+        <label for="ranking">Ranking:</label><br>
+        <input type="text" id="ranking" name="ranking"><br>
+
+        <input type="submit" value="Submit">
+    </form>
+    <h2>Query Feedback API</h2>
+    <a href="{{ url_for('api_form') }}">Retrieve Feedback</a>
+</body>
+</html>

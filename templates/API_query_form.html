@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>API URL Generator</title>
+    <script>
+        function URLgenerator_key_value(event) {
+            event.preventDefault();  {#prevent automatic submission#}
+            var key = document.getElementById('key').value;
+            var value = document.getElementById('value').value;
+            var baseURL = "/api/get-feedback";
+            var apiURL = baseURL + "?key=" + encodeURIComponent(key) + "&value=" + encodeURIComponent(value);
+
+            // display generated API URL
+            document.getElementById('generatedURL_key_value').textContent = apiURL;
+        }
+
+        function URLgenerator_field(event) {
+            event.preventDefault();
+            var field = document.getElementById('field').value;
+            var filter_key = document.getElementById('filter_key').value;
+            var filter_value = document.getElementById('filter_value').value;
+            var baseUrl = "/api/filter-feedback";
+            var apiUrl = baseUrl + "?field=" +encodeURIComponent(field) + "&filter_key=" + encodeURIComponent(filter_key) + "&filter_value="
+            + encodeURIComponent(filter_value);
+
+            // display generated API URL
+            document.getElementById('generatedUrl_field').textContent = apiUrl;
+        }
+    </script>
+</head>
+<body>
+    <h1>Query All Feedback</h1>
+    <a href = "{{ url_for('get_all_feedback') }}">Get all feedback</a>
+
+    <h1>Enter What You Want to Query</h1>
+    <form id="apiForm">
+        <label for="key">Key:</label><br>
+        <select name="key" id="key">
+            <option value="comment">Comment</option>
+            <option value="score">Score</option>
+            <option value="ranking">Ranking</option>
+        </select><br>
+        <label for="value">Value:</label><br>
+        <input type="text" id="value" name="value"><br><br>
+
+        <button type="button" onclick="URLgenerator_key_value(event)">Generate API URL</button>
+        <button type="button" onclick="submitForm('apiForm','/api/display-feedback')">Display Feedback</button>
+
+    </form>
+
+    <script>
+        function submitForm(form,action) {
+            document.getElementById(form).action = action;
+            document.getElementById(form).submit();
+        }
+    </script>
+
+    <p>Generated API URL: <span id="generatedURL_key_value"></span></p>
+
+    <h1>Get Specific Fields of Feedback with Filter</h1>
+    <form id="api_filter_form">
+        <label for="field">Field to Retrieve:</label><br>
+        <select name="field" id="field">
+            <option value="comment">Comment</option>
+            <option value="score">Score</option>
+            <option value="ranking">Ranking</option>
+        </select><br>
+
+        <label for="filter_key">Filter Key:</label><br>
+        <select name="filter_key" id="filter_key">
+            <option value="comment">Comment</option>
+            <option value="score">Score</option>
+            <option value="ranking">Ranking</option>
+        </select><br>
+
+        <label for="filter_value">Filter Value:</label><br>
+        <input type="text" id="filter_value" name="filter_value"><br><br>
+
+        <button type="button" onclick="URLgenerator_field(event)">Generate API URL</button>
+        <button type="button" onclick="submitForm('api_filter_form','/api/display-filter-feedback')">Display Feedback</button>
+    </form>
+
+    <p>Generated API URL: <span id="generatedUrl_field"></span></p>
+
+</body>
+</html>
