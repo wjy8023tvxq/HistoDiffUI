@@ -4,342 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b12f5aaf-5e84-4cc9-aa44-85481e184757" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/HistoDiffUI.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/histo_diff_ui/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/histo_diff_ui/db_utils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/histo_diff_ui/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/LogoCustom/58670430.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/addDown.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/addOver.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/addUp.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/alignCenterDown.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/alignCenterOver.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/alignCenterUp.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/alignJustifyDown.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/alignJustifyOver.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/alignJustifyUp.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/alignLeftDown.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/alignLeftOver.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/alignLeftUp.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/alignRightDown.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/alignRightOver.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/alignRightUp.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/audioMutedDown.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/audioMutedOver.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/audioMutedUp.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/audioOnDown.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/audioOnOver.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/audioOnUp.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/cancelDown.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/cancelOver.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/cancelUp.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/clearAllDown.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/clearAllOver.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/clearAllUp.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/clearDown.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/clearOver.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/clearUp.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/color0Down.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/color0Over.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/color0Up.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/color1Down.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/color1Over.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/color1Up.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/color2Down.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/color2Over.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/color2Up.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/color3Down.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/color3Over.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/color3Up.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/color4Down.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/color4Over.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/color4Up.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/color5Down.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/color5Over.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/color5Up.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/color6Down.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/color6Over.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/color6Up.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/color7Down.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/color7Over.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/color7Up.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/colorPickerDown.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/colorPickerOver.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/colorPickerUp.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/deleteDown.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/deleteOver.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/deleteUp.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/editDown.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/editModeDivider.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/editModeFieldOfViewDown.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/editModeFieldOfViewOver.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/editModeFieldOfViewUp.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/editModeFreehandDown.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/editModeFreehandOver.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/editModeFreehandUp.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/editModePolygonDown.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/editModePolygonOver.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/editModePolygonUp.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/editModeShapeDown.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/editModeShapeOver.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/editModeShapeUp.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/editModeTextDown.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/editModeTextOver.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/editModeTextUp.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/editOver.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/editUp.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/ellipsesDown.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/ellipsesOver.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/ellipsesUp.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/fullViewDivider.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/fullViewDown.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/fullViewExitDown.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/fullViewExitOver.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/fullViewExitUp.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/fullViewOver.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/fullViewUp.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/helpDown.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/helpOver.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/helpUp.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/imageFilterApplyDown.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/imageFilterApplyOver.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/imageFilterApplyUp.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/imageFilterClearDown.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/imageFilterClearOver.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/imageFilterClearUp.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/imageFilterDivider.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/imageFilterMinusDown.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/imageFilterMinusOver.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/imageFilterMinusUp.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/imageFilterPlusDown.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/imageFilterPlusOver.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/imageFilterPlusUp.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/imageFiltersClearAllDown.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/imageFiltersClearAllOver.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/imageFiltersClearAllUp.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/linePickerDown.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/linePickerOver.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/linePickerUp.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/logoDivider.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/measureDown.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/measureExitDown.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/measureExitOver.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/measureExitUp.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/measureOver.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/measureUp.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/narrativeBoldDown.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/narrativeBoldOver.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/narrativeBoldUp.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/narrativeItalicDown.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/narrativeItalicOver.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/narrativeItalicUp.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/narrativeScaleDownDown.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/narrativeScaleDownOver.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/narrativeScaleDownUp.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/narrativeScaleUpDown.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/narrativeScaleUpOver.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/narrativeScaleUpUp.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/narrativeSetInitialDown.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/narrativeSetInitialOver.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/narrativeSetInitialUp.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/narrativeUnderlineDown.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/narrativeUnderlineOver.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/narrativeUnderlineUp.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/nextDown.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/nextOver.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/nextUp.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/panDivider.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/panDownDown.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/panDownOver.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/panDownUp.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/panLeftDown.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/panLeftOver.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/panLeftUp.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/panRightDown.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/panRightOver.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/panRightUp.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/panUpDown.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/panUpOver.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/panUpUp.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/panelHideDown.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/panelHideOver.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/panelHideUp.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/panelShowDown.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/panelShowOver.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/panelShowUp.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/previewDown.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/previewOver.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/previewUp.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/priorDown.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/priorOver.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/priorUp.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/resetDown.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/resetOver.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/resetUp.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/rotateClockwiseDown.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/rotateClockwiseOver.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/rotateClockwiseUp.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/rotateCounterwiseDown.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/rotateCounterwiseOver.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/rotateCounterwiseUp.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/rotateDivider.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/saveDown.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/saveOver.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/saveUp.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/sliderThumbDown.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/sliderThumbOver.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/sliderThumbUp.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/sliderTick-unhidden-notUsed.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/sliderTick.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/sliderTrack.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/startDown.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/startUp.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/stopDown.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/stopOver.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/stopUp.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/tab.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/tabButtonArea.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/toolbarBackground.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/toolbarExpandDown.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/toolbarExpandOver.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/toolbarExpandUp.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/toolbarLogo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/toolbarMinimizeDown.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/toolbarMinimizeOver.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/toolbarMinimizeUp.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/tourOrSlideDivider.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/trackingClearAllDown.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/trackingClearAllOver.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/trackingClearAllUp.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/trackingClearLastDown.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/trackingClearLastOver.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/trackingClearLastUp.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/trackingClearTypeDown.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/trackingClearTypeOver.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/trackingClearTypeUp.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/trackingNavDown.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/trackingNavOver.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/trackingNavUp.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/trackingSaveDown.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/trackingSaveOver.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/trackingSaveUp.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/viewModeDown.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/viewModeOver.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/viewModeUp.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/zoomInDown.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/zoomInOver.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/zoomInUp.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/zoomOutDown.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/zoomOutOver.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/Standard/zoomOutUp.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Assets/Skins/Default/skinFiles.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/SlideAssets/Comparison/P1Kidney.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-HE-DUPE/ImageProperties.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-HE-DUPE/TileGroup0/0-0-0.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-HE-DUPE/TileGroup0/1-0-0.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-HE-DUPE/TileGroup0/1-1-0.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-HE-DUPE/TileGroup0/2-0-0.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-HE-DUPE/TileGroup0/2-0-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-HE-DUPE/TileGroup0/2-1-0.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-HE-DUPE/TileGroup0/2-1-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-HE-DUPE/TileGroup0/2-2-0.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-HE-DUPE/TileGroup0/2-2-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-HE-DUPE/TileGroup0/3-0-0.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-HE-DUPE/TileGroup0/3-0-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-HE-DUPE/TileGroup0/3-0-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-HE-DUPE/TileGroup0/3-0-3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-HE-DUPE/TileGroup0/3-1-0.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-HE-DUPE/TileGroup0/3-1-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-HE-DUPE/TileGroup0/3-1-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-HE-DUPE/TileGroup0/3-1-3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-HE-DUPE/TileGroup0/3-2-0.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-HE-DUPE/TileGroup0/3-2-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-HE-DUPE/TileGroup0/3-2-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-HE-DUPE/TileGroup0/3-2-3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-HE-DUPE/TileGroup0/3-3-0.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-HE-DUPE/TileGroup0/3-3-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-HE-DUPE/TileGroup0/3-3-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-HE-DUPE/TileGroup0/3-3-3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-HE-DUPE/TileGroup0/3-4-0.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-HE-DUPE/TileGroup0/3-4-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-HE-DUPE/TileGroup0/3-4-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-HE-DUPE/TileGroup0/3-4-3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-HE/ImageProperties.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-HE/TileGroup0/0-0-0.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-HE/TileGroup0/1-0-0.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-HE/TileGroup0/1-1-0.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-HE/TileGroup0/2-0-0.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-HE/TileGroup0/2-0-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-HE/TileGroup0/2-1-0.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-HE/TileGroup0/2-1-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-HE/TileGroup0/2-2-0.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-HE/TileGroup0/2-2-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-HE/TileGroup0/3-0-0.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-HE/TileGroup0/3-0-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-HE/TileGroup0/3-0-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-HE/TileGroup0/3-0-3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-HE/TileGroup0/3-1-0.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-HE/TileGroup0/3-1-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-HE/TileGroup0/3-1-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-HE/TileGroup0/3-1-3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-HE/TileGroup0/3-2-0.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-HE/TileGroup0/3-2-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-HE/TileGroup0/3-2-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-HE/TileGroup0/3-2-3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-HE/TileGroup0/3-3-0.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-HE/TileGroup0/3-3-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-HE/TileGroup0/3-3-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-HE/TileGroup0/3-3-3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-HE/TileGroup0/3-4-0.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-HE/TileGroup0/3-4-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-HE/TileGroup0/3-4-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-HE/TileGroup0/3-4-3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-SBST/ImageProperties.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-SBST/TileGroup0/0-0-0.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-SBST/TileGroup0/1-0-0.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-SBST/TileGroup0/1-1-0.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-SBST/TileGroup0/2-0-0.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-SBST/TileGroup0/2-0-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-SBST/TileGroup0/2-1-0.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-SBST/TileGroup0/2-1-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-SBST/TileGroup0/2-2-0.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-SBST/TileGroup0/2-2-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-SBST/TileGroup0/3-0-0.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-SBST/TileGroup0/3-0-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-SBST/TileGroup0/3-0-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-SBST/TileGroup0/3-0-3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-SBST/TileGroup0/3-1-0.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-SBST/TileGroup0/3-1-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-SBST/TileGroup0/3-1-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-SBST/TileGroup0/3-1-3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-SBST/TileGroup0/3-2-0.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-SBST/TileGroup0/3-2-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-SBST/TileGroup0/3-2-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-SBST/TileGroup0/3-2-3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-SBST/TileGroup0/3-3-0.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-SBST/TileGroup0/3-3-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-SBST/TileGroup0/3-3-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-SBST/TileGroup0/3-3-3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-SBST/TileGroup0/3-4-0.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-SBST/TileGroup0/3-4-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-SBST/TileGroup0/3-4-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/WSI_CLAM/Kidney/P1-733-SBST/TileGroup0/3-4-3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/ZoomifyImageViewerEnterprise-3viewer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/36-ComparisonORG.htm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/API_error.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/API_query_form.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/API_result.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/Homepage.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/filter_result.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/form.html" afterDir="false" />
+    <list default="true" id="b12f5aaf-5e84-4cc9-aa44-85481e184757" name="Changes" comment="Initial commit">
+      <change afterPath="$PROJECT_DIR$/static/Feedback_form.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/ZoomifyImageViewerEnterprise-3viewer.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/ZoomifyImageViewerEnterprise-3viewer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/36-ComparisonORG.htm" beforeDir="false" afterPath="$PROJECT_DIR$/templates/36-ComparisonORG.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/API_query_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/API_query_form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/Homepage.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Homepage.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -525,8 +197,26 @@
       <workItem from="1706577577977" duration="914000" />
       <workItem from="1706669692802" duration="1998000" />
       <workItem from="1706721214469" duration="424000" />
-      <workItem from="1706722173065" duration="885000" />
+      <workItem from="1706722173065" duration="1766000" />
+      <workItem from="1706914484321" duration="657000" />
+      <workItem from="1707007032534" duration="520000" />
+      <workItem from="1707117261277" duration="1114000" />
+      <workItem from="1707179108543" duration="6118000" />
+      <workItem from="1707207349538" duration="7859000" />
+      <workItem from="1707456515247" duration="2943000" />
+      <workItem from="1707727354300" duration="5472000" />
+      <workItem from="1707769629475" duration="19427000" />
+      <workItem from="1708023977168" duration="1208000" />
     </task>
+    <task id="LOCAL-00001" summary="Initial commit">
+      <option name="closed" value="true" />
+      <created>1706723176466</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1706723176466</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -542,6 +232,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -562,6 +256,6 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/HistoDiffUI$get_html.coverage" NAME="get_html Coverage Results" MODIFIED="1705615686453" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/templates" />
     <SUITE FILE_PATH="coverage/HistoDiffUI$HistoDiffUI.coverage" NAME="HistoDiffUI Coverage Results" MODIFIED="1705632417675" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/HistoDiffUI$Flask__app_py_.coverage" NAME="Flask (app.py) Coverage Results" MODIFIED="1706721246708" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/HistoDiffUI$Flask__app_py_.coverage" NAME="Flask (app.py) Coverage Results" MODIFIED="1708023985033" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

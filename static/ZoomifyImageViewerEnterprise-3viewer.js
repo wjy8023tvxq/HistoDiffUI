@@ -268,7 +268,7 @@ Z.ZoomifyImageViewer = function () {
                     Z.Navigator2.setVisibility(true);
                 }
                 if (Z.comparison && Z.Navigator3) {
-                    var left3 = width - Z.navigatorW;
+                    var left3 = 2 * width / 3;
                     Z.Navigator3.setSizeAndPosition(null, null, left3, top, Z.navigatorFit);
                     Z.Navigator3.setVisibility(true);
                 }
@@ -954,7 +954,7 @@ Z.ZoomifyImageViewer = function () {
                 var vpIDStrPrior = Z.viewportCurrentID.toString();
                 var viewportPrior = Z.viewportCurrent;
                 Z.viewportCurrent = vpTest;
-                Z.viewportCurrentID = vpID
+                Z.viewportCurrentID = vpID;
                 if (!Z.comparison) {
                     Z.viewportCurrent.setVisibility(true);
                 }
@@ -963,11 +963,24 @@ Z.ZoomifyImageViewer = function () {
                     viewportPrior.setVisibility(false);
                 }
                 Z.Utils.validateCallback('viewportChanged');
-                if (Z.comparison && Z.Viewport0 && Z.Viewport1) {
+                if (Z.comparison && Z.Viewport0 && Z.Viewport1 && Z.Viewport2) {
                     var vpElement0 = document.getElementById('viewportContainer0');
                     var vpElement1 = document.getElementById('viewportContainer1');
+                    var vpElement2 = document.getElementById('viewportContainer2');
                     Z.Utils.swapZIndices(vpElement0, vpElement1);
+                    Z.Utils.swapZIndices(vpElement1, vpElement2);
+                    setViewportCurrent(vpID);
                     setNavigatorCurrent(vpID);
+                    // Update the hidden input for feedbackImageId with the selected vpID
+                    // document.getElementById('feedbackImageId').value = vpID + 1;
+                    // document.addEventListener('DOMContentLoaded', function() {
+                    //     var feedbackImageIdInput = document.getElementById('feedbackImageId');
+                    //     if (feedbackImageIdInput) {
+                    //         feedbackImageIdInput.value = vpID + 1;
+                    //     } else {
+                    //         console.error('feedbackImageId input not found');
+                    //     }
+                    // });
                 }
                 if (Z.viewportCurrent && Z.viewportCurrent.getStatus('initializedViewport')) {
                     var viewportResized = (Z.viewportCurrent.getViewW() != Z.viewerW || Z.viewportCurrent.getViewH() != Z.viewerH);
@@ -1048,7 +1061,19 @@ Z.ZoomifyImageViewer = function () {
             Z.Navigator2.setSelected(vpID == 1);
         }
         if (Z.Navigator3) {
-            Z.Navigator3.setSelected(vpID == 1);
+            Z.Navigator3.setSelected(vpID == 2);
+        }
+    }
+
+    function setViewportCurrent(vpID) {
+        if (Z.Viewport0) {
+            Z.Viewport.setSelected(vpID == 0);
+        }
+        if (Z.Viewport1) {
+            Z.Viewport1.setSelected(vpID == 1);
+        }
+        if (Z.Viewport2) {
+            Z.Viewport2.setSelected(vpID == 2);
         }
     }
 
@@ -1729,6 +1754,7 @@ Z.ZoomifyViewport = function (vpID, vpImgPath, vpAnnotPath, vpHotPath, vpTrackPa
     var oversizeDisplay, oD, oS, oCtx;
     var comparisonMaskContainer, cmD, cmS;
     var viewportContainer, cD, cS;
+    var viewportBorder, vBO, vboS;
     var viewportBackfillDisplay, bD, bS, bCtx;
     var viewportDisplay, vD, vS, vCtx;
     var transitionCanvas, tC, tS, tCtx;
@@ -2561,6 +2587,14 @@ Z.ZoomifyViewport = function (vpID, vpImgPath, vpAnnotPath, vpHotPath, vpTrackPa
             viewportContainer.appendChild(viewportDisplay);
             vD = viewportDisplay;
             vS = vD.style;
+        }
+        if (Z.comparison && !vBO) {
+            var viewportBorderColor = Z.Utils.getResource('DEFAULT_VIEWPORTBORDERCOLOR');
+            viewportBorder = Z.Utils.createContainerElement('div', 'viewportBorder' + vpIDStr, 'inline-block', 'absolute', 'hidden', displayW + 3 + 'px', displayH + 3 + 'px', displayL + 'px', displayT + 'px', 'solid', '3px', 'transparent none', '0px', '0px', 'normal', null, true);
+            viewportBorder.style.borderColor = Z.Utils.stringValidateColorValue(viewportBorderColor);
+            viewportContainer.appendChild(viewportBorder);
+            vBO = viewportBorder;
+            vboS = vBO.style;
         }
         if (Z.useCanvas) {
             if (!tC) {
@@ -3553,6 +3587,15 @@ Z.ZoomifyViewport = function (vpID, vpImgPath, vpAnnotPath, vpHotPath, vpTrackPa
     this.setOpacity = function (percentage) {
         percentage = (percentage >= 2) ? (percentage / 100) : (percentage < 0) ? 0 : (percentage > 1) ? 1 : percentage;
         Z.Utils.setOpacity(viewportContainer, percentage);
+    }
+    this.setSelected = function (selected) {
+        if (!vBO) {
+            vBO = document.getElementById('viewportBorder' + vpIDStr);
+        }
+        if (vBO) {
+            nboS = vBO.style;
+            vboS.display = (selected) ? 'inline-block' : 'none';
+        }
     }
     this.showLists = function (visible) {
         var visValue = (visible) ? 'visible' : 'hidden';
@@ -16923,6 +16966,8 @@ Z.ZoomifyViewport = function (vpID, vpImgPath, vpAnnotPath, vpHotPath, vpTrackPa
     function initializeViewportEventListeners() {
         Z.Utils.addEventListener(cD, 'mousedown', viewportEventsHandler);
         Z.Utils.addEventListener(cD, 'mousemove', Z.Utils.preventDefault);
+        // Z.Utils.addEventListener(cD, 'click', viewportEventsHandler);
+        // Z.Utils.addEventListener(cD, 'click', viewportClickHandler);
         Z.Utils.addEventListener(cD, 'touchstart', viewportEventsHandler);
         Z.Utils.addEventListener(cD, 'touchmove', viewportEventsHandler);
         Z.Utils.addEventListener(cD, 'touchend', viewportEventsHandler);
@@ -16951,7 +16996,7 @@ Z.ZoomifyViewport = function (vpID, vpImgPath, vpAnnotPath, vpHotPath, vpTrackPa
             if ((eventType != 'mouseover' && eventType != 'mouseout' && !Z.interactive) || (eventType == 'mousedown' && (!Z.interactive || (Z.coordinatesVisible && isAltKey))) || blockRightClick) {
                 Z.tourStop = true;
                 return;
-            } else if (eventType == 'mousedown' || eventType == 'touchstart' || (Z.tourPlaying && Z.tourStop)) {
+            } else if (eventType == 'mousedown' || eventType == 'touchstart' || eventType == 'click' || (Z.tourPlaying && Z.tourStop)) {
                 self.zoomAndPanAllStop();
                 self.tourStop();
                 Z.tourStop = true;
@@ -16995,6 +17040,10 @@ Z.ZoomifyViewport = function (vpID, vpImgPath, vpAnnotPath, vpHotPath, vpTrackPa
                 }
             }
             switch (eventType) {
+                // case'click':
+                //     Z.Viewer.initializeViewerKeyEventListeners(true);
+                //     Z.Utils.addEventListener(document, 'click', viewportClickHandler);
+                //     break;
                 case'mouseover':
                     if (!Z.fullView && document.activeElement.tagName != 'TEXTAREA') {
                         Z.Viewer.initializeViewerKeyDefaultListeners(true);
@@ -17054,6 +17103,34 @@ Z.ZoomifyViewport = function (vpID, vpImgPath, vpAnnotPath, vpHotPath, vpTrackPa
                 clickPt = self.getClickCoordsInImage(event, zVal, mPt);
             }
             switch (eventType) {
+                case'click':
+                    if (Z.comparison) {
+                        var tID = target.id;
+                        var vpIDStr = tID.substring(tID.indexOf('viewportDisplay') + 15, tID.length);
+                        viewportID = (Z.Utils.stringValidate(vpIDStr)) ? parseInt(vpIDStr, 10) : 0;
+                        Z.Viewer.viewportSelect(viewportID);
+                    }
+                    document.addEventListener('DOMContentLoaded', function() {
+                        var viewportContainerList = document.querySelectorAll('div[id^="viewportContainer"]');
+                        viewportContainerList.forEach(container => {
+                            console.log(container.id);
+                        });
+                        viewportContainerList.forEach(function(vpc) {
+                            // Remove styling from previously selected viewport
+                            vpc.addEventListener('click',function(){
+                                var previousSelected = document.querySelector('div[id^="viewportContainer"].selected');
+                                if (previousSelected) {
+                                    previousSelected.style.border = '';  // remove the highlight border
+                                    previousSelected.classList.remove('selected');
+                                }
+                                // Highlight the clicked viewport
+                                this.style.border = '2px solid #ff0000'; // Apply red border to highlight
+                                this.classList.add('selected');
+                            });
+                        });
+                    });
+                    break;
+
                 case'mousedown':
                     Z.mouseIsDown = true;
                     if (Z.comparison) {
@@ -18319,6 +18396,37 @@ Z.ZoomifyViewport = function (vpID, vpImgPath, vpAnnotPath, vpHotPath, vpTrackPa
             self.toggleFullViewMode(false, true);
         }
     }
+    // function viewportClickHandler(event) {
+    //     var event = Z.Utils.event(event);
+    //     var eventType = event.type;
+    //     var target;
+    //     if (event && eventType) {
+    //         target = Z.Utils.target(event);
+    //     }
+        
+    //     function onViewportClick(event) {
+    //         var event = Z.Utils.event(event);
+    //         var eventType = event.type;
+    //         var target;
+    //         if (event && eventType) {
+    //             target = Z.Utils.target(event);
+    //         }
+    //         var previousSelected = document.querySelector('div[id^="viewportContainer"].selected');
+    //         if (previousSelected) {
+    //             previousSelected.style.border = '';  // remove the highlight border
+    //             previousSelected.classList.remove('selected');
+    //         }
+    //         // Highlight the clicked viewport
+    //         target.style.border = '2px solid #ff0000'; // Apply red border to highlight
+    //         target.classList.add('selected');
+    //     }
+
+    //     var viewportContainerList = document.querySelectorAll('div[id^="viewportContainer"]');
+    //     viewportContainerList.forEach(vpc => {
+    //         Z.Utils.addEventListener(vpc,'click', onViewportClick);
+    //     });
+    // }
+
     this.mouseWheelHandler = function (delta, isAltKey) {
         Z.mouseWheelIsDown = true;
         if (Z.mouseWheelCompleteTimer) {
@@ -22659,7 +22767,7 @@ Z.ZoomifyNavigator = function (navViewport) {
             nrS = nR.style;
             if (Z.comparison) {
                 var navigatorBorderColor = Z.Utils.getResource('DEFAULT_NAVIGATORBORDERCOLOR');
-                var navigatorBorder = Z.Utils.createContainerElement('div', 'navigatorBorder' + navViewportIDStr, 'inline-block', 'absolute', 'hidden', navW + 1 + 'px', navH + 1 + 'px', navL + 'px', navT + 'px', 'solid', '1px', 'transparent none', '0px', '0px', 'normal', null, true);
+                var navigatorBorder = Z.Utils.createContainerElement('div', 'navigatorBorder' + navViewportIDStr, 'inline-block', 'absolute', 'hidden', navW + 3 + 'px', navH + 3 + 'px', navL + 2 + 'px', navT + 2 + 'px', 'solid', '3px', 'transparent none', '0px', '0px', 'normal', null, true);
                 navigatorBorder.style.borderColor = Z.Utils.stringValidateColorValue(navigatorBorderColor);
                 navigatorDisplay.appendChild(navigatorBorder);
                 nBO = navigatorBorder;
@@ -22981,8 +23089,8 @@ Z.ZoomifyNavigator = function (navViewport) {
                     }
                     if (nBO) {
                         var nboS = nBO.style;
-                        nboS.width = (width - 2) + 'px';
-                        nboS.height = (height - 2) + 'px';
+                        nboS.width = (width - 6) + 'px';
+                        nboS.height = (height - 6) + 'px';
                         nboS.left = parseFloat(nbS.left) + 'px';
                         nboS.top = parseFloat(nbS.top) + 'px';
                         nboS.display = (navViewportIDStr == Z.viewportCurrentID) ? 'inline-block' : 'none';
@@ -28254,13 +28362,13 @@ Z.Utils = {
                 resTxt = '1';
                 break;
             case'DEFAULT_CLICKPAN':
-                resTxt = '1';
+                resTxt = '1';  // '0'=disable, '1'=enable (default).
                 break;
             case'DEFAULT_CLICKZOOM':
-                resTxt = '1';
+                resTxt = '1';  // '0'=disable, '1'=enable (default).
                 break;
             case'DEFAULT_DOUBLECLICKZOOM':
-                resTxt = '1';
+                resTxt = '1';  // '0'=disable, '1'=enable (default).
                 break;
             case'DEFAULT_DOUBLECLICKDELAY':
                 resTxt = '250';
@@ -28353,7 +28461,11 @@ Z.Utils = {
                 resTxt = '#0000FF';
                 break;
             case'DEFAULT_NAVIGATORBORDERCOLOR':
-                resTxt = '#FFFFFF';
+                // resTxt = '#FFFFFF';
+                resTxt = '#FF0000';
+                break;
+            case'DEFAULT_VIEWPORTBORDERCOLOR':
+                resTxt = '#FF0000';
                 break;
             case'DEFAULT_GALLERYVISIBLE':
                 resTxt = (Z.slideshow) ? '2' : '0';

@@ -16,8 +16,8 @@
 		<!-- <style type="text/css"> #myContainer{ width:77%; height:90%; margin:-22px 356px; border:1px; border-style:solid; border-color:#000000;} </style> -->
 		<!-- <script type="text/javascript"> Z.showImage("myContainer", null, "zComparisonPath=Assets/Comparisons/Comparison/comparison.xml&zNavigatorFit=-1&zRotationVisible=1&zLogoCustomPath=Assets/LogoCustom/58670430.png"); </script> -->
 		<!-- <script type="text/javascript"> Z.showImage("myContainer", "Images/Overlays/Image1", "zOverlayPath=Assets/Overlays/Sun/overlays.xml&zTilesPNG=1"); </script> -->
-		<!-- Font Awesome for social icons -->
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<!-- Font Awesome for icons -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 		<!-- Garamond Fonts -->
 		<link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert-dev.js" ></script>
@@ -149,7 +149,7 @@
 			  width: 235px;
 			  /*font-size: 17px;*/
 			  line-height: 25px;
-			  padding: 25px;
+			  padding: 10px 25px 40px 25px;
 			  position: absolute;
 			  top: 53px;
 			  left: 0;
@@ -363,6 +363,43 @@
 			            border-radius: 7px;
 			        }
 			        .button:hover {
+			            background-image: linear-gradient(rgba(255,255,255,.15) 49%, rgba(0,0,0,.1) 51%, rgba(0,0,0,.15));
+			        }
+
+					.buttonSmall{
+						margin-right: 5px;
+			            color: #444;
+			            margin-top: 5px;
+			           padding: 5px 15px !important;
+			            border: 1px solid #aaa;
+			            /* border-color: rgba(0,0,0,0.2); */
+			            border-bottom-color: #333;
+			            border-bottom-color: rgba(0,0,0,0.4);
+			            /* color: #fff; */
+			            /* box-shadow: inset 0 0.08em 0 rgba(255,255,255,0.4), inset 0 0 0.1em rgba(255,255,255,0.9); */
+			            cursor: pointer;
+			            display: inline-block;
+			            /* font: bold 73%/2.1 "Lucida Grande", Tahoma, sans-serif; */
+			            padding: 0 .95em 0 0;
+			            text-align: center;
+			            box-shadow: 0 1px 0 1px rgba(0,0,0,.04);
+			            text-decoration: none;
+			            /* text-shadow: 0 1px 0 rgba(0,0,0,0.5); */
+			            white-space: nowrap;
+			            -moz-user-select: none;
+			            -webkit-user-select: none;
+			            -ms-user-select: none;
+			            user-select: none;
+			            position: relative;
+			            border-radius: .3em;
+			            /* background-color: #a4182e; */
+			            background-color: #eaeaea;
+			            /*font-family: sans-serif;*/
+			            font-weight: 700;
+						font-size: 0.75em;
+			            border-radius: 7px;
+					}
+					.buttonSmall:hover {
 			            background-image: linear-gradient(rgba(255,255,255,.15) 49%, rgba(0,0,0,.1) 51%, rgba(0,0,0,.15));
 			        }
 
@@ -777,7 +814,7 @@
 									width: 28px;
 									height: 28px;
 									background: linear-gradient(to bottom, #FFFFFF 40%, #f0f0f0);
-									{#background-image: -webkit-linear-gradient(top, #FFFFFF 40%, #f0f0f0);#}
+									/*background-image: -webkit-linear-gradient(top, #FFFFFF 40%, #f0f0f0);*/
 									border-radius: 100%;
 									box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
 								}
@@ -790,7 +827,7 @@
 									width: 12px;
 									height: 12px;
 									background: linear-gradient(to bottom, #eeeeee, #FFFFFF);
-									{#background-image: -webkit-linear-gradient(top, #eeeeee, #FFFFFF);#}
+									/*background-image: -webkit-linear-gradient(top, #eeeeee, #FFFFFF);*/
 									border-radius: 6px;
 									box-shadow: inset 0 1px rgba(0, 0, 0, 0.02);
 								}
@@ -1141,32 +1178,36 @@
               <li>
                 <input type="radio" name="tabs" id="tab2" checked/>
                 <label for="tab2" role="tab" aria-selected="false" aria-controls="panel2" tabindex="0">Feedback</label>
-                <div id="tab-content2" class="tab-content" role="tabpanel" aria-labelledby="feedback" aria-hidden="true">
+                <div id="tab-content" class="tab-content" role="tabpanel" aria-labelledby="feedback" aria-hidden="true">
                     <div class="columnLeft">
                     <h3>HistoAug Feedback</h3>
 
-                    <form action="/submit" method="post" style="margin-top: -22px;margin-bottom: 7px;">
-                        <label for="ImageSelection" class="dropdownCSS" style="margin-top: 21px;">Select Image Set:</label>
-                        <select id="ImageSelection" class="select-css">
-                            <option value="ADI">Adipose</option>
-                            <option value="BACK">background</option>
-                            <option value="DEB">debris</option>
-                            <option value="LYM">lymphocytes</option>
-                            <option value="MUC">mucus</option>
-                            <option value="MUS">smooth muscle</option>
-                            <option value="NORM">normal colon mucosa</option>
-                            <option value="STR">cancer-associated stroma</option>
-                            <option value="TUM">colorectal adenocarcinoma epithelium</option>
-                        </select>
-                        <label for="comment" class="dropdownCSS">Comment:</label>
-                        <textarea id="comment" name="comment" class="long-text" placeholder="Enter your comment here..."></textarea>
-
+                    <form id="feedbackForm" action="/submit" method="post" style="margin-top: -22px;margin-bottom: 7px;"><br>
+						<div id="imageSetNav">
+							<span id="imageSetNavTag" style="font-size: 19px">Image Set Navigation</span><br>
+							<button id="prevButton" aria-label="Previous" title="Previous"><i class="fas fa-chevron-left"></i></button>
+							<input type="number" id="imageSetIndexInput" min="1" style="width: 26px;font-size: 16px;" /> / <span id="totalImageSets" style="font-size: 16px">20</span>
+							<button id="goButton" aria-label="Go" title="Go"><i class="fas fa-search"></i></button>
+							<button id="nextButton" aria-label="Next" title="Next"><i class="fas fa-chevron-right"></i></button>
+							<br>
+							<!-- Progress Indicator displaying completed/total -->
+   							<span id="progressIndicator"style="font-size: 19px; margin-right: 4px;">0/20</span> 
+							<span id="completedText" style="font-size: 19px">  completed</span><br><br>
+							<!-- a placeholder for icon to show if the current image set is "completed" -->
+							<span id="imageDropdownTag" style="font-size: 19px">Select image you want to provide feedback with: </span>
+							<select id="imageSelectionDropdown" class="select-css">
+								<!-- Options will be dynamically populated based on the current image set -->
+							</select>
+						</div>
+						<input type="hidden" id="feedbackSetId" name="setId" value="">
+						<input type="hidden" id="feedbackImageId" name="imageId" value="">
 
                         <label for="score" class="dropdownCSS">Score:</label>
-                        <input id="score" name="score" class="textBoxCSS">
+                        <input type="number" id="score" name="score" class="textBoxCSS" required placeholder="Score (Required)">
 
                         <label for="ranking" class="dropdownCSS">Ranking:</label>
-                        <select id="ranking" name="rankings" class="short-select-css">
+                        <select id="ranking" name="ranking" class="short-select-css" required>
+							<option value="" disabled selected>Select ranking for this image</option>
                             <option value="1">1</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
@@ -1178,12 +1219,15 @@
                             <option value="9">9</option>
                             <option value="10">10</option>
                         </select>
-                        <br>
+						<label for="comment" class="dropdownCSS">Comment:</label>
+                        <textarea id="comment" name="comment" class="long-text" placeholder="Enter your comment here (optional)"></textarea>
                         <input type="submit" value="Submit" class="button">
                         </form>
-                        <h3>Query Feedback API</h3>
+                        <!-- <h3>Query Feedback API</h3>
                         <a href="{{ url_for('api_form') }}">Retrieve Feedback</a>
-                        </div>
+                        </div> -->
+						
+						
                 </div>
               </li>
          </ul>
@@ -1217,6 +1261,179 @@ slider.oninput = function() {
 
 
 </script> -->
+<script type="text/javascript">
+	let imageSets=[
+
+		{
+			setId: 1,
+			images: [
+				{imageId: 1, name: "Kidney Patient1 HE", feedbackSubmitted: false}, 
+				{imageId: 2, name: "Kidney Patient1 Side by Side", feedbackSubmitted: false},
+				{imageId: 3, name: "Kidney Patient1 HE DUPE", feedbackSubmitted: false},
+			]
+		},
+		{
+			setId: 2,
+			images: [
+				{imageId: 1, name: "Winter mountain 1", feedbackSubmitted: false}, 
+				{imageId: 2, name: "Winter mountain 2", feedbackSubmitted: false},
+				{imageId: 3, name: "Winter mountain 3", feedbackSubmitted: false},
+			]
+		},
+		{
+			setId: 3,
+			images: [
+				{imageId: 1, name: "Color pencils 1", feedbackSubmitted: false}, 
+				{imageId: 2, name: "Color pencils 2", feedbackSubmitted: false},
+				{imageId: 3, name: "Color pencils 3", feedbackSubmitted: false},
+			]
+		}
+	]  // needs to load image sets dynamically
+	let currentIndex = 0;
+
+
+	function renderImageSet(index) {
+		// Validate index
+		index = Math.max(0, Math.min(index, imageSets.length - 1));
+		currentIndex = index;
+
+		var currentImageSet = imageSets[index];		// zero-indexed
+		var currentImageSetID = currentImageSet.setId;  // example placeholder
+
+		// Update the iframe src to include query parameters
+		document.getElementById("comparison").src = `/36-ComparisonORG?imageset=${currentImageSetID}`; 
+
+		document.getElementById('imageSetIndexInput').value = index + 1; // Update input box to reflect current image set
+		populateImageSelectionDropdown(index);
+		updateProgress(); // Update the progress indicator
+	}
+
+	function updateProgress() {
+		let completedSets = 0;
+    	imageSets.forEach(set => {
+			let allFeedbackSubmitted = set.images.every(image => image.feedbackSubmitted);
+			if (allFeedbackSubmitted) {
+				completedSets++;
+			}
+		});
+		document.getElementById('progressIndicator').innerText = `${completedSets}/${imageSets.length}`;
+		document.getElementById('totalImageSets').innerText = imageSets.length;
+	}
+
+	// not modified
+	function navigate(direction) {   // not modified
+		if (direction === 'next' && currentIndex < imageSets.length - 1) {
+			renderImageSet(currentIndex + 1);
+		} else if (direction === 'prev' && currentIndex > 0) {
+			renderImageSet(currentIndex - 1);
+    	}
+
+	}
+	function updateFeedbackForm(setId, imageId) {
+		// console.log(`Updating form with setId: ${setId}, imageId: ${imageId}`); // Debugging line
+		document.getElementById('feedbackSetId').value = setId;	
+		document.getElementById('feedbackImageId').value = imageId;
+	}
+
+	function populateImageSelectionDropdown(setIndex) {
+		const dropdown = document.getElementById('imageSelectionDropdown');
+		dropdown.innerHTML = ''; // Clear existing options
+		
+		const images = imageSets[setIndex].images;
+		images.forEach(image => {
+			const option = document.createElement('option');
+			option.value = image.imageId;
+			option.textContent = image.name; // Use the name or description for display
+			dropdown.appendChild(option);
+		});
+
+		// Update the feedback form with the default/first image's IDs
+		updateFeedbackForm(imageSets[setIndex].setId, images[0].imageId);
+	}
+
+	renderImageSet(currentIndex);  // render the default/ first image set
+
+	document.getElementById('imageSelectionDropdown').addEventListener('change', function() {
+		const selectedImageId = this.value;
+		const currentSetId = imageSets[currentIndex].setId;
+		updateFeedbackForm(currentSetId, selectedImageId);
+	});
+
+	document.getElementById('prevButton').addEventListener('click', () => navigate('prev'));
+	document.getElementById('nextButton').addEventListener('click', () => navigate('next'));
+
+	document.getElementById('goButton').addEventListener('click', function() {
+		const indexInput = document.getElementById('imageSetIndexInput');
+		let index = parseInt(indexInput.value, 10) - 1; // Convert to zero-based index
+
+		if (isNaN(index) || index < 0 || index >= imageSets.length) {
+			alert('Please enter a valid image set number');
+			return;
+		}
+
+		renderImageSet(index);
+	});
+
+	document.getElementById('feedbackForm').addEventListener('submit', function(event) {
+		event.preventDefault(); // Prevent the default form submission action
+
+		// Assuming you have inputs with IDs 'feedbackSetId' and 'feedbackImageId' storing the current set and image IDs
+		const setId = parseInt(document.getElementById('feedbackSetId').value);
+		const imageId = parseInt(document.getElementById('feedbackImageId').value);
+
+		// Find the specific image set and image
+		const imageSet = imageSets.find(set => set.setId === setId);
+		console.log(`Image set found with setId: ${setId}`); // Debug message for finding image set
+		if (imageSet) {
+			const image = imageSet.images.find(img => img.imageId === imageId);
+			if (image) {
+				console.log(`Image found with imageId: ${imageId} in set: ${setId}`); // Debug message for finding image
+				image.feedbackSubmitted = true; // Update feedbackSubmitted flag
+				console.log(`Feedback submitted flag updated for imageId: ${imageId} in set: ${setId}`); // Debug message for updating the flag
+			} else {
+				console.error(`Image not found with imageId: ${imageId} in set: ${setId}`);
+			}
+		}
+
+		// Call updateProgress to refresh the progress indicator
+		updateProgress();
+
+		// submit the feedback via AJAX to the server
+		// and only clear the form / show a success message upon successful submission.
+		submitFormViaAjax();
+	});
+
+	function submitFormViaAjax() {
+		const formData = new FormData(document.getElementById('feedbackForm'));
+		fetch('/submit', {
+			method: 'POST',
+			body: formData,
+		})
+		.then(response => {
+			if (response.ok) {
+				// Handle successful submission here
+				alert('Feedback submitted successfully!');
+				// Optionally, reset the form or update UI elements
+				document.getElementById('feedbackForm').reset(); // Clear the form
+			} else {
+				// Handle server errors or unsuccessful submission
+				alert('There was a problem with the submission.');
+			}
+		})
+		.catch(error => {
+			// Handle network errors
+			console.error('Submission error:', error);
+		});
+	}
+
+	// document.getElementById('feedbackForm').addEventListener('submit', function(e) {
+	// 	e.preventDefault(); // Temporarily prevent form submission for inspection
+	// 	console.log(document.getElementById('feedbackSetId').value);
+	// 	console.log(document.getElementById('feedbackImageId').value);
+	// 	// Remove e.preventDefault() and the console logs once you confirm the values are correct
+	// });
+
+</script>
 <script type="text/javascript">
 	$(function () {
 			  // var sizes = ["0","0.1", "0.2", "0.3", "0.4", "0.5","0.6","0.7","0.8","0.9"];

@@ -15,11 +15,13 @@ def dashboard():
 
 @app.route('/submit', methods=['POST'])
 def submit_form():
-    comment = request.form['comment']
-    score = request.form['score']
-    ranking = request.form['ranking']
-
-    db_utils.insert_feedback(db,{"comment": comment, "score": score, "ranking": ranking})
+    setID = request.form.get('setId')
+    imageID = request.form.get('imageId')
+    comment = request.form.get('comment')
+    score = request.form.get('score')
+    ranking = request.form.get('ranking')
+    
+    db_utils.insert_feedback(db,{"setID": setID, "imageID": imageID, "comment": comment, "score": score, "ranking": ranking})
 
     return redirect(url_for('index'))
 

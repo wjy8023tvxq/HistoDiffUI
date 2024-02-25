@@ -8,8 +8,21 @@
 		<!-- <style type="text/css"> #myContainer {width:100%; height:90%; margin:auto; border:1px; border-style:solid; border-color:#696969;}</style> -->
 			<style type="text/css"> #myContainer {  width:100%; height:770px;  border-style:solid; } </style>
 		<script type="text/javascript">
+			const queryString = window.location.search;
+			const urlParams = new URLSearchParams(queryString);
+			const imageSetId = urlParams.get('imageset');
+			
+			if (imageSetId == '1') {
+				Z.showImage("myContainer", null, "zComparisonPath=../static/SlideAssets/Comparison/P1Kidney.xml&zSkinPath=../static/Assets/Skins/Default&zNavigatorFit=-1&zRotationVisible=1&zLogoCustomPath=../static/Assets/LogoCustom/58670430.png");
+			}
+			else if (imageSetId == '2') {
+				Z.showImage("myContainer", null, "zComparisonPath=../static/SlideAssets/Comparison/Winter.xml&zSkinPath=../static/Assets/Skins/Default&zNavigatorFit=-1&zRotationVisible=1&zLogoCustomPath=../static/Assets/LogoCustom/58670430.png");
+			}
+			else if (imageSetId == '3') {
+				Z.showImage("myContainer", null, "zComparisonPath=../static/SlideAssets/Comparison/P1Test.xml&zSkinPath=../static/Assets/Skins/Default&zNavigatorFit=-1&zRotationVisible=1&zLogoCustomPath=../static/Assets/LogoCustom/58670430.png");
+			}
 
-                Z.showImage("myContainer", null, "zComparisonPath=../static/SlideAssets/Comparison/P1Kidney.xml&zSkinPath=../static/Assets/Skins/Default&zNavigatorFit=-1&zRotationVisible=1&zLogoCustomPath=../static/Assets/LogoCustom/58670430.png");
+                // Z.showImage("myContainer", null, "zComparisonPath=../static/SlideAssets/Comparison/WinterSmall.xml&zSkinPath=../static/Assets/Skins/Default&zNavigatorFit=-1&zRotationVisible=1&zLogoCustomPath=../static/Assets/LogoCustom/58670430.png");
 
 		</script>
 	</head>
