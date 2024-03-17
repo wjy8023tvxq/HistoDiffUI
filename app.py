@@ -2,8 +2,21 @@ from flask import Flask, render_template, request, redirect, url_for, jsonify
 from flask_pymongo import PyMongo
 from histo_diff_ui import db_utils
 
+
+from flask_login import (
+    UserMixin,
+    login_user,
+    LoginManager,
+    current_user,
+    logout_user,
+    login_required,
+)
+
 app = Flask(__name__)
 db = db_utils.get_db(app)
+# app.config['SECRET_KEY'] = 'your_secret_key'
+# login_manager = LoginManager(app)
+# login_manager.login_view = 'login'
 
 @app.route('/')
 def index():

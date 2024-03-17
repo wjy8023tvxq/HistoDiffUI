@@ -2,7 +2,7 @@
 # Password: TWUENGkvWGjFiFWq
 
 from flask_pymongo import PyMongo
-from flask import jsonify
+
 
 def get_db(app):
     # MongoDB configuration

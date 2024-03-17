@@ -4,13 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b12f5aaf-5e84-4cc9-aa44-85481e184757" name="Changes" comment="Initial commit">
-      <change afterPath="$PROJECT_DIR$/static/Feedback_form.js" afterDir="false" />
+    <list default="true" id="b12f5aaf-5e84-4cc9-aa44-85481e184757" name="Changes" comment="Added static files">
+      <change afterPath="$PROJECT_DIR$/histo_diff_ui/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/histo_diff_ui/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/histo_diff_ui/db_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/histo_diff_ui/db_utils.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/ZoomifyImageViewerEnterprise-3viewer.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/ZoomifyImageViewerEnterprise-3viewer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/36-ComparisonORG.htm" beforeDir="false" afterPath="$PROJECT_DIR$/templates/36-ComparisonORG.htm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/API_query_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/API_query_form.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/Homepage.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Homepage.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -23,8 +24,8 @@
       <list>
         <option value="Flask Main" />
         <option value="HTML File" />
-        <option value="Python Script" />
         <option value="JavaScript File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -41,6 +42,20 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;wjy8023tvxq&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="e53473d2-76c8-4799-bc85-c6d60758ea1f" />
+        <option name="url" value="https://github.com/wjy8023tvxq/HistoDiffUI.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/javascript/extLibs/http_static.centro.org.uk_js_zoomify_ZoomifyImageViewerPro-min.js" root0="FORCE_HIGHLIGHTING" />
@@ -207,6 +222,8 @@
       <workItem from="1707727354300" duration="5472000" />
       <workItem from="1707769629475" duration="19427000" />
       <workItem from="1708023977168" duration="1208000" />
+      <workItem from="1708882593819" duration="12003000" />
+      <workItem from="1710585262298" duration="17040000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -216,7 +233,23 @@
       <option name="project" value="LOCAL" />
       <updated>1706723176466</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added image set navigation, 'highlight selected image' feature, frontend modification">
+      <option name="closed" value="true" />
+      <created>1708886297860</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1708886297860</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Added static files">
+      <option name="closed" value="true" />
+      <created>1708886550590</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1708886550590</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -235,7 +268,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
+    <MESSAGE value="Added image set navigation, 'highlight selected image' feature, frontend modification" />
+    <MESSAGE value="Added static files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added static files" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -256,6 +291,6 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/HistoDiffUI$get_html.coverage" NAME="get_html Coverage Results" MODIFIED="1705615686453" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/templates" />
     <SUITE FILE_PATH="coverage/HistoDiffUI$HistoDiffUI.coverage" NAME="HistoDiffUI Coverage Results" MODIFIED="1705632417675" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/HistoDiffUI$Flask__app_py_.coverage" NAME="Flask (app.py) Coverage Results" MODIFIED="1708023985033" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/HistoDiffUI$Flask__app_py_.coverage" NAME="Flask (app.py) Coverage Results" MODIFIED="1710636962451" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

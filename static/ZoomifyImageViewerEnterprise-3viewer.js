@@ -1740,7 +1740,8 @@ Z.ZoomifyViewport = function (vpID, vpImgPath, vpAnnotPath, vpHotPath, vpTrackPa
     var OFFSET_CHUNK_SIZE_BYTES = CHUNK_SIZE * 8;
     var BC_CHUNK_SIZE_BYTES = CHUNK_SIZE * 4;
     var TILE_COUNT = 0;
-    var TILES_PER_FOLDER = 256;
+    var TILE_SIZE = parseInt(Z.Utils.getResource('DEFAULT_TILESIZE'), 10);
+    var TILES_PER_FOLDER = TILE_SIZE;
     var TILE_WIDTH = parseInt(Z.Utils.getResource('DEFAULT_TILEW'), 10);
     var TILE_HEIGHT = parseInt(Z.Utils.getResource('DEFAULT_TILEH'), 10);
     var TIERS_SCALE_UP_MAX = parseFloat(Z.Utils.getResource('DEFAULT_TIERSMAXSCALEUP'));
@@ -1757,6 +1758,7 @@ Z.ZoomifyViewport = function (vpID, vpImgPath, vpAnnotPath, vpHotPath, vpTrackPa
     var viewportBorder, vBO, vboS;
     var viewportBackfillDisplay, bD, bS, bCtx;
     var viewportDisplay, vD, vS, vCtx;
+    var viewportLabel, lD, lS;
     var transitionCanvas, tC, tS, tCtx;
     var watermarkDisplay, wD, wS;
     var hotspotDisplay, hD, hS, hotD, hotS, annD, annS;
@@ -2071,6 +2073,34 @@ Z.ZoomifyViewport = function (vpID, vpImgPath, vpAnnotPath, vpHotPath, vpTrackPa
             netConnector.loadXML(XMLPath);
         }
     }
+
+    //  // Method to create and update a label displaying the viewport ID using createContainerElement
+    //  function createViewportIDLabel(viewportID, labelW, labelH, labelL, labelT) {
+    //     var vpIDStr = viewportID.toString();
+    //     // Use the createContainerElement function to create the label with specified dimensions and position
+    //     var label = Z.Utils.createContainerElement(
+    //         'div', 
+    //         'viewportLabel' + vpIDStr, 
+    //         'block', 
+    //         'absolute', 
+    //         'hidden', 
+    //         labelW,  // Width set to labelW
+    //         labelH,  // Height set to labelH
+    //         labelL,  // Left position set to labelL
+    //         labelT,  // Top position set to labelT
+    //         'none', 
+    //         '0px', 
+    //         'rgba(0, 0, 0, 0.7)', 
+    //         '0px', 
+    //         '2px 5px', 
+    //         'normal', 
+    //         'default', 
+    //         true
+    //     );
+
+    //     label.innerText = 'Image ' + vpIDStr;
+    //     return label;
+    // };
 
     function initializeViewport(iW, iH, tW, tH, iTileCount, iVersion, iHeaderSize, iHeaderSizeTotal, iMagnification, iFocal, iQuality) {
         createCanvasContexts();
@@ -2590,12 +2620,28 @@ Z.ZoomifyViewport = function (vpID, vpImgPath, vpAnnotPath, vpHotPath, vpTrackPa
         }
         if (Z.comparison && !vBO) {
             var viewportBorderColor = Z.Utils.getResource('DEFAULT_VIEWPORTBORDERCOLOR');
-            viewportBorder = Z.Utils.createContainerElement('div', 'viewportBorder' + vpIDStr, 'inline-block', 'absolute', 'hidden', displayW + 3 + 'px', displayH + 3 + 'px', displayL + 'px', displayT + 'px', 'solid', '3px', 'transparent none', '0px', '0px', 'normal', null, true);
-            viewportBorder.style.borderColor = Z.Utils.stringValidateColorValue(viewportBorderColor);
+            viewportBorder = Z.Utils.createContainerElement('div', 'viewportBorder' + vpIDStr, 'inline-block', 'absolute', 'hidden', displayW + 3 + 'px', displayH + 3 + 'px', displayL + 'px', displayT + 'px', 'none', '0px', 'transparent none', '0px', '0px', 'normal', null, true);
             viewportContainer.appendChild(viewportBorder);
             vBO = viewportBorder;
             vboS = vBO.style;
         }
+        // if(!lD) {
+        //     var labelW = Z.navigatorW; 
+        //     var labelH = Z.navigatorH;
+        //     var labelL = Z.viewerW / 6;
+        //     var labelT = Z.navigatorT;
+        //     if (Z.comparison && vpIDStr == '1') {
+        //         labelL = Z.viewerW / 2;
+        //     }
+        //     if (Z.comparison && vpIDStr == '2') {
+        //         labelL = 5 * Z.viewerW / 6;
+        //     }
+        //     viewportLabel = createViewportIDLabel(vpID, labelW, labelH, labelL, labelT);
+        //     viewportDisplay.appendChild(viewportLabel);
+        //     lD = viewportLabel;
+        //     lS = lD.style;
+        //     lS.zIndex = (Z.baseZIndex + 5).toString();
+        // }
         if (Z.useCanvas) {
             if (!tC) {
                 transitionCanvas = Z.Utils.createContainerElement('canvas', 'transitionCanvas', 'none', 'absolute', 'visible', '1px', '1px', '0px', '0px', 'none', '0px', 'transparent none', '0px', '0px', 'normal');
@@ -3593,7 +3639,7 @@ Z.ZoomifyViewport = function (vpID, vpImgPath, vpAnnotPath, vpHotPath, vpTrackPa
             vBO = document.getElementById('viewportBorder' + vpIDStr);
         }
         if (vBO) {
-            nboS = vBO.style;
+            vboS = vBO.style;
             vboS.display = (selected) ? 'inline-block' : 'none';
         }
     }
@@ -5259,10 +5305,10 @@ Z.ZoomifyViewport = function (vpID, vpImgPath, vpAnnotPath, vpHotPath, vpTrackPa
             this.b = y + vpPixelsBottom * viewHRatio;
         }
         if (partials) {
-            this.l = this.l - (256 - this.l % 256);
-            this.r = this.r + (256 - this.r % 256);
-            this.t = this.t - (256 - this.t % 256);
-            this.b = this.b + (256 - this.b % 256);
+            this.l = this.l - (TILE_SIZE - this.l % TILE_SIZE);
+            this.r = this.r + (TILE_SIZE - this.r % TILE_SIZE);
+            this.t = this.t - (TILE_SIZE - this.t % TILE_SIZE);
+            this.b = this.b + (TILE_SIZE - this.b % TILE_SIZE);
         }
     }
 
@@ -10337,11 +10383,11 @@ Z.ZoomifyViewport = function (vpID, vpImgPath, vpAnnotPath, vpHotPath, vpTrackPa
                 lntbS.top = rNoteName + adjLabel + 'px';
                 lntbS.visibility = 'visible';
                 Z.Utils.setTextNodeStyle(lNTB, 'black', 'verdana', labelFontSize + 'px', 'none', 'normal', 'normal', 'normal', 'normal', '1em', 'left', 'none');
-                var nlS = noteList.style;
-                nlS.width = listW + 'px';
-                nlS.left = labelW + 'px';
-                nlS.top = rNoteName + selectElementAdj + 'px';
-                nlS.visibility = 'visible';
+                var nltS = noteList.style;
+                nltS.width = listW + 'px';
+                nltS.left = labelW + 'px';
+                nltS.top = rNoteName + selectElementAdj + 'px';
+                nltS.visibility = 'visible';
                 var noteW = panelDims.w - margin * 2 - 2;
                 var ntbS = nTB.style;
                 ntbS.width = noteW + 'px';
@@ -14908,10 +14954,11 @@ Z.ZoomifyViewport = function (vpID, vpImgPath, vpAnnotPath, vpHotPath, vpTrackPa
                 }
             }
             if (image.getAttribute('TILEW') === null) {
-                optionalParams += '&zTileW=256';
+                // optionalParams += '&zTileW=256';
+                optionalParams += '&zTileW={}'.format(TILE_SIZE);
             }
             if (image.getAttribute('TILEH') === null) {
-                optionalParams += '&zTileH=256';
+                optionalParams += '&zTileH={}'.format(TILE_SIZE);
             }
             imageListDP[imageListDP.length] = {
                 text: imageListText,
@@ -22622,10 +22669,13 @@ Z.ZoomifyToolbar = function (tbViewport) {
 Z.ZoomifyNavigator = function (navViewport) {
     var self = this;
     var isInitialized = false;
-    var navViewportIDStr = navViewport.getViewportID().toString();
+    var navViewportID = navViewport.getViewportID();
+    var navViewportIDStr = navViewportID.toString();
     var validateNavigatorGlobalsInterval;
     var navigatorDisplay;
     var nD, ndS, nB, nbS, niC, nicS, nI, nR, nrS;
+    var navViewportLabel;
+    var nlD, nlS;
     var navigatorImage;
     var navigatorImages = [];
     var MOUSECLICK_THRESHOLD_NAVIGATOR = parseInt(Z.Utils.getResource('DEFAULT_MOUSECLICKTHRESHOLDNAVIGATOR'), 10);
@@ -22735,7 +22785,7 @@ Z.ZoomifyNavigator = function (navViewport) {
         var tW = navigatorImage.width;
         var tH = navigatorImage.height;
         if (tW != 0 && tH != 0) {
-            navigatorDisplay = Z.Utils.createContainerElement('div', 'navigatorDisplay' + navViewportIDStr, 'inline-block', 'absolute', 'hidden', navW + 'px', navH + 'px', navL + 'px', navT + 'px', 'solid', '1px', 'transparent none', '0px', '0px', 'normal', null, true);
+            navigatorDisplay = Z.Utils.createContainerElement('div', 'navigatorDisplay' + navViewportIDStr, 'inline-block', 'absolute', 'hidden', navW + 'px', navH + 'px', navL + 'px', navT + 'px', 'none', '0px', 'transparent none', '0px', '0px', 'normal', null, true);
             Z.NavigatorDisplay = navigatorDisplay;
             nD = navigatorDisplay;
             ndS = nD.style;
@@ -22751,7 +22801,7 @@ Z.ZoomifyNavigator = function (navViewport) {
             navigatorDisplay.appendChild(navigatorBackground);
             nB = navigatorBackground;
             nbS = nB.style;
-            var navigatorImageContainer = Z.Utils.createContainerElement('div', 'navigatorImageContainer', 'inline-block', 'absolute', 'hidden', navW + 'px', navH + 'px', '0px', '0px', 'none', '0px', 'transparent none', '0px', '0px', 'normal', null, true);
+            var navigatorImageContainer = Z.Utils.createContainerElement('div', 'navigatorImageContainer', 'inline-block', 'absolute', 'hidden', navW + 'px', navH + 'px', '0px', '0px', 'solid', '1px', 'transparent none', '0px', '0px', 'normal', null, true);
             navigatorImageContainer.appendChild(navigatorImage);
             navigatorImage.alt = Z.Utils.getResource('UI_NAVIGATORACCESSIBILITYALTATTRIBUTE');
             navigatorDisplay.appendChild(navigatorImageContainer);
@@ -22762,17 +22812,47 @@ Z.ZoomifyNavigator = function (navViewport) {
             var niH = nI.height;
             var navigatorRectangle = Z.Utils.createContainerElement('div', 'navigatorRectangle', 'inline-block', 'absolute', 'hidden', navW + 1 + 'px', navH + 1 + 'px', navL + 'px', navT + 'px', 'solid', '1px', 'transparent none', '0px', '0px', 'normal', null, true);
             navigatorRectangle.style.borderColor = Z.Utils.stringValidateColorValue(Z.navigatorRectangleColor);
-            navigatorDisplay.appendChild(navigatorRectangle);
+            navigatorImageContainer.appendChild(navigatorRectangle);
             nR = navigatorRectangle;
             nrS = nR.style;
             if (Z.comparison) {
                 var navigatorBorderColor = Z.Utils.getResource('DEFAULT_NAVIGATORBORDERCOLOR');
-                var navigatorBorder = Z.Utils.createContainerElement('div', 'navigatorBorder' + navViewportIDStr, 'inline-block', 'absolute', 'hidden', navW + 3 + 'px', navH + 3 + 'px', navL + 2 + 'px', navT + 2 + 'px', 'solid', '3px', 'transparent none', '0px', '0px', 'normal', null, true);
+                var navigatorBorder = Z.Utils.createContainerElement('div', 'navigatorBorder' + navViewportIDStr, 'inline-block', 'absolute', 'hidden', navW + 5 + 'px', navH + 5 + 'px', navL + 'px', navT + 'px', 'solid', '3px', 'transparent none', '0px', '0px', 'normal', null, true);
                 navigatorBorder.style.borderColor = Z.Utils.stringValidateColorValue(navigatorBorderColor);
                 navigatorDisplay.appendChild(navigatorBorder);
                 nBO = navigatorBorder;
                 nboS = nB.style;
             }
+            navViewportLabel = Z.Utils.createContainerElement('div', 'navigatorIDLabel' + navViewportIDStr, 'inline-block', 'absolute', 'hidden', navW + 'px', navH + 1 + 'px', navL+ 'px', navT + 'px', 'none', '0px', 'transparent none', '0px', '0px', 'normal', null, true);
+            // navViewportLabel.style.borderColor = Z.Utils.stringValidateColorValue(Z.navigatorRectangleColor);
+            navigatorDisplay.appendChild(navViewportLabel);
+            nlD = navViewportLabel;
+            nlS = nlD.style;
+            nlS.color = Z.Utils.stringValidateColorValue(navigatorBorderColor);
+            nlS.fontSize = '20px';
+            nlS.fontWeight = 'bold';
+            nlS.paddingTop = '30px';
+            // nlS.display = 'flex';
+            // nlS.justifyContent = 'center';
+            // nlS.alignItems = 'center';
+            // nlS.textAlign = 'center';  // For horizontal text alignment
+            nlS.alignItems = 'flex-start'; // Align items to the start of the cross axis
+            // Create a span to hold the text, apply background color, and additional text styles
+            var textSpan = document.createElement('span');
+            var tsS = textSpan.style; // Short reference for textSpan.style
+            tsS.backgroundColor = '#FFFFFF'; // White background for the text
+            tsS.color = '#FF0000'; // Red text color
+            tsS.fontSize = '20px'; // Font size
+            tsS.fontWeight = 'bold'; // Bold text
+            tsS.padding = '2px 5px'; // Padding around the text
+            tsS.marginTop = '10px';
+            tsS.borderRadius = '4px'; // Rounded corners for the background
+
+
+            var labelID = navViewportID + 1;
+            var labelIDStr = labelID.toString();
+            textSpan.innerText = "Image " + labelIDStr;
+            nlD.appendChild(textSpan);
             Z.ViewerDisplay.appendChild(navigatorDisplay);
             setSizeAndPosition(navW, navH, navL, navT, navFit, niW, niH);
             visibility(Z.navigatorVisible == 1 || Z.navigatorVisible == 2);
@@ -22970,7 +23050,7 @@ Z.ZoomifyNavigator = function (navViewport) {
                 window.clearInterval(validateNavigatorGlobalsInterval);
                 validateNavigatorGlobalsInterval = null;
             }
-            if (!nD || !ndS || !nB || !nbS || !niC || !nicS || !nI || !nR || !nrS) {
+            if (!nD || !ndS || !nB || !nbS || !niC || !nicS || !nI || !nR || !nrS || !nlD || !nlS) {
                 nD = navigatorDisplay;
                 ndS = nD.style;
                 nB = navigatorDisplay.firstChild;
@@ -22978,8 +23058,11 @@ Z.ZoomifyNavigator = function (navViewport) {
                 niC = navigatorDisplay.childNodes[1];
                 nicS = niC.style
                 nI = navigatorDisplay.childNodes[1].firstChild;
-                nR = navigatorDisplay.childNodes[2];
+                nR = niC.firstChild;
+                // nR = navigatorDisplay.childNodes[2];
                 nrS = nR.style;
+                nlD = navigatorDisplay.childNodes[3];
+                nlS = nlD.style;
             }
         }
     }
@@ -23033,7 +23116,7 @@ Z.ZoomifyNavigator = function (navViewport) {
                     width *= targetAspect;
                 }
             }
-            ndS.width = width + 'px';
+            ndS.width = width + Z.viewerW / 6 + 5 + 'px';
             ndS.height = height + 'px';
             ndS.left = left + 'px';
             ndS.top = top + 'px';
@@ -23089,12 +23172,23 @@ Z.ZoomifyNavigator = function (navViewport) {
                     }
                     if (nBO) {
                         var nboS = nBO.style;
-                        nboS.width = (width - 6) + 'px';
-                        nboS.height = (height - 6) + 'px';
+                        nboS.width = (width - 5) + 'px';
+                        nboS.height = (height - 5) + 'px';
                         nboS.left = parseFloat(nbS.left) + 'px';
                         nboS.top = parseFloat(nbS.top) + 'px';
                         nboS.display = (navViewportIDStr == Z.viewportCurrentID) ? 'inline-block' : 'none';
                     }
+                }
+                if (!nlD) {
+                    var nlD = document.getElementById('navigatorIDLabel' + navViewportIDStr);
+                }
+                if (nlD) {
+                    var nlS = nlD.style;
+                    nlS.width = (width + 20) + 'px';
+                    nlS.height = (height - 4) + 'px';
+                    nlS.left = parseFloat(nbS.left) + Z.viewerW / 6 - 35 + 'px';
+                    nlS.top = parseFloat(nbS.top) + 1 + 'px';
+                    nlS.display = 'inline-block';
                 }
             }
         } else {
@@ -23216,8 +23310,8 @@ Z.ZoomifyNavigator = function (navViewport) {
             var rcPt = Z.Utils.rotatePoint(tcX, tcY, -r);
             var rL = rcPt.x - parseFloat(nrS.width) / 2;
             var rT = rcPt.y - parseFloat(nrS.height) / 2;
-            var ncX = parseFloat(ndS.width) / 2;
-            var ncY = parseFloat(ndS.height) / 2;
+            var ncX = parseFloat(nicS.width) / 2;
+            var ncY = parseFloat(nicS.height) / 2;
             var compAdj = (Z.comparison) ? -1 : 0;
             var rnL = ncX + rL + compAdj;
             var rnT = ncY + rT - 1;
@@ -28194,16 +28288,19 @@ Z.Utils = {
                 resTxt = '1060';
                 break;
             case'DEFAULT_CHUNKSIZE':
-                resTxt = (Z.tileSource == 'ZoomifyImageFile') ? '1024' : '256';
+                resTxt = (Z.tileSource == 'ZoomifyImageFile') ? '1024' : '64';
                 break;
             case'DEFAULT_CHUNKSIZE-PFF':
                 resTxt = '256';
                 break;
             case'DEFAULT_TILEW':
-                resTxt = (Z.tileSource != 'IIIFImageServer') ? '256' : '512';
+                resTxt = (Z.tileSource != 'IIIFImageServer') ? '64' : '512';
                 break;
             case'DEFAULT_TILEH':
-                resTxt = (Z.tileSource != 'IIIFImageServer') ? '256' : '512';
+                resTxt = (Z.tileSource != 'IIIFImageServer') ? '64' : '512';
+                break;
+            case'DEFAULT_TILESIZE':
+                resTxt = '64';
                 break;
             case'DEFAULT_IMAGESLOADINGMAX':
                 resTxt = '300';

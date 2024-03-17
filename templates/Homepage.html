@@ -1189,11 +1189,14 @@
 							<input type="number" id="imageSetIndexInput" min="1" style="width: 26px;font-size: 16px;" /> / <span id="totalImageSets" style="font-size: 16px">20</span>
 							<button id="goButton" aria-label="Go" title="Go"><i class="fas fa-search"></i></button>
 							<button id="nextButton" aria-label="Next" title="Next"><i class="fas fa-chevron-right"></i></button>
+							<!-- Icon for completed status -->
+    						<i id="completedIcon" class="fas fa-check-circle" style="font-size: 25px; color: green; display: none;"></i>
 							<br>
 							<!-- Progress Indicator displaying completed/total -->
    							<span id="progressIndicator"style="font-size: 19px; margin-right: 4px;">0/20</span> 
-							<span id="completedText" style="font-size: 19px">  completed</span><br><br>
+							<span id="completedText" style="font-size: 19px">  completed</span>
 							<!-- a placeholder for icon to show if the current image set is "completed" -->
+							<br><br>
 							<span id="imageDropdownTag" style="font-size: 19px">Select image you want to provide feedback with: </span>
 							<select id="imageSelectionDropdown" class="select-css">
 								<!-- Options will be dynamically populated based on the current image set -->
@@ -1267,25 +1270,25 @@ slider.oninput = function() {
 		{
 			setId: 1,
 			images: [
-				{imageId: 1, name: "Kidney Patient1 HE", feedbackSubmitted: false}, 
-				{imageId: 2, name: "Kidney Patient1 Side by Side", feedbackSubmitted: false},
-				{imageId: 3, name: "Kidney Patient1 HE DUPE", feedbackSubmitted: false},
+				{imageId: 1, name: "Image 1", feedbackSubmitted: false}, 
+				{imageId: 2, name: "Image 2", feedbackSubmitted: false},
+				{imageId: 3, name: "Image 3", feedbackSubmitted: false},
 			]
 		},
 		{
 			setId: 2,
 			images: [
-				{imageId: 1, name: "Winter mountain 1", feedbackSubmitted: false}, 
-				{imageId: 2, name: "Winter mountain 2", feedbackSubmitted: false},
-				{imageId: 3, name: "Winter mountain 3", feedbackSubmitted: false},
+				{imageId: 1, name: "Image 1", feedbackSubmitted: false}, 
+				{imageId: 2, name: "Image 2", feedbackSubmitted: false},
+				{imageId: 3, name: "Image 3", feedbackSubmitted: false},
 			]
 		},
 		{
 			setId: 3,
 			images: [
-				{imageId: 1, name: "Color pencils 1", feedbackSubmitted: false}, 
-				{imageId: 2, name: "Color pencils 2", feedbackSubmitted: false},
-				{imageId: 3, name: "Color pencils 3", feedbackSubmitted: false},
+				{imageId: 1, name: "Image 1", feedbackSubmitted: false}, 
+				{imageId: 2, name: "Image 2", feedbackSubmitted: false},
+				{imageId: 3, name: "Image 3", feedbackSubmitted: false},
 			]
 		}
 	]  // needs to load image sets dynamically
@@ -1305,20 +1308,60 @@ slider.oninput = function() {
 
 		document.getElementById('imageSetIndexInput').value = index + 1; // Update input box to reflect current image set
 		populateImageSelectionDropdown(index);
-		updateProgress(); // Update the progress indicator
+		updateProgress(currentImageSetID); // Update the progress indicator
+		// console.log(`Called updateProgress with index: ${index}`);
 	}
 
-	function updateProgress() {
+	// function updateProgress() {
+	// 	let completedSets = 0;
+    // 	imageSets.forEach(set => {
+	// 		let allFeedbackSubmitted = set.images.every(image => image.feedbackSubmitted);
+	// 		if (allFeedbackSubmitted) {
+	// 			completedSets++;
+	// 		}
+	// 	});
+	// 	document.getElementById('progressIndicator').innerText = `${completedSets}/${imageSets.length}`;
+	// 	document.getElementById('totalImageSets').innerText = imageSets.length;
+	// }
+
+	function updateProgress(imageSetID) {
 		let completedSets = 0;
-    	imageSets.forEach(set => {
+		let isCurrentSetComplete = false;
+		// var updateIndex = currIndex;
+
+		console.log("Starting updateProgress with currentIndex: " + imageSetID);
+		
+		imageSets.forEach((set, index) => {
 			let allFeedbackSubmitted = set.images.every(image => image.feedbackSubmitted);
+			console.log("Image set " + index + " - All feedback submitted: " + allFeedbackSubmitted);
+			
 			if (allFeedbackSubmitted) {
 				completedSets++;
+				console.log("Incrementing completedSets: " + completedSets);
+				console.log("currentSetId: " + imageSetID);
+				
+				if (index === imageSetID - 1) {
+					isCurrentSetComplete = true;
+					console.log("Current image set (" + index + ") is complete");
+				}
 			}
 		});
+
+		console.log("Total completed sets: " + completedSets + " out of " + imageSets.length);
 		document.getElementById('progressIndicator').innerText = `${completedSets}/${imageSets.length}`;
 		document.getElementById('totalImageSets').innerText = imageSets.length;
+
+		// Update the completion icon visibility based on the current set's completion status
+		if (isCurrentSetComplete) {
+			console.log("Current set is complete. Displaying completion icon.");
+			document.getElementById('completedIcon').style.display = 'inline';
+		} else {
+			console.log("Current set is not complete. Hiding completion icon.");
+			document.getElementById('completedIcon').style.display = 'none';
+		}
 	}
+
+
 
 	// not modified
 	function navigate(direction) {   // not modified
@@ -1396,7 +1439,7 @@ slider.oninput = function() {
 		}
 
 		// Call updateProgress to refresh the progress indicator
-		updateProgress();
+		updateProgress(setId);
 
 		// submit the feedback via AJAX to the server
 		// and only clear the form / show a success message upon successful submission.
